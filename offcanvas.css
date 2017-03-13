@@ -2,8 +2,9 @@
 
 /* Which top menu bar has been selected */
 .dkActive {
-  color: #fff;
+/*  color: #fff;
   background-color: #E3E3E3;
+  */
 }
 
 /* Define the attributes of the main page's body */
@@ -33,4 +34,9 @@
 .activities-table {
 
 
+}
+
+body {
+    background-color: white;
+    color: black;
 }
