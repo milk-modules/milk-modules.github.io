@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+
+</head>
+<body>
+
+
+<div id="mainPage">
+    <h1>
+        <center>Speech Based Accessibility - Medium</center>
+    </h1>
+
+    <h3>Introduction</h3>
+    <p>
+        This activity is a slightly more advanced version of the <i><a
+            href="../SpeechBasedAccessibility_(Simple)/index.html" target="_blank">Speech-based
+        accessibility (simple)</a></i> activity. In this activity, the 'contentDescription' property of the user
+        interface (UI) elements will be set using code. Additionally, the 'accessibilityLiveRegion' property of a view
+        is utilized to automatically provide updates to the user when the view changes.
+    </p>
+    <p>
+        In this activity, a fake weather forecast for two days (today & tomorrow) is shown on the screen. The weather forecast is
+        randomly generated and includes high & low temperature and a picture. Since the forecast is randomly generated,
+        it's not feasible to hardcode the 'contentDescription' values in the layout XML. Hence, the value for the
+        'contentDescription' is assigned at runtime to the UI elements.
+        Further, to demonstrate the 'accessibilityLiveRegion' feature, the forecast auto regenerates every 30 seconds.
+        When it regenerates, the app will automatically announce/speak the updated forecast.
+    </p>
+
+    <h3>Activity</h3>
+    <p>Download the activity <a href="TODO" target="_blank">here</a>.</p>
+
+    <p>The non-accessible version of this app is located
+        <a href="https://github.com/milk-modules/Apps/tree/master/non-accessible/DemoApp06"
+           target="_blank">here</a>.</p>
+
+    <p>The accessible version of this app is located
+        <a href="https://github.com/milk-modules/Apps/tree/master/accessible/DemoApp06"
+           target="_blank">here</a>.</p>
+
+
+    <h3>More Resources</h3>
+    <sup id="fn2">1. <a
+            href="https://developer.android.com/reference/android/view/View.html#attr_android:accessibilityLiveRegion"
+            target="_blank">'accessibilityLiveRegion' property documentation</a></sup>
+    <br>
+    <sup id="fn3">2. <a href="https://developer.android.com/guide/components/fragments.html"
+                        target="_blank">Fragments</a></sup>
+
+</div>
+</body>
+</html>
