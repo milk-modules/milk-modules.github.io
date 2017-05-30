@@ -2,27 +2,64 @@
 <html>
 <head>
 
+
 </head>
 <body>
 
 
 <div id="mainPage">
-    <!--
-    <div class="top-main-image">
-      <img src="images/android-robot-logo.jpg" alt="Android Logo"></img>
-    </div>
-    -->
+    <h1>
+        <center>Speech Based Accessibility - Simple</center>
+    </h1>
 
-    <h1>Speech-based accessibility</h1>
+    <h3>Introduction</h3>
+    <p>
+        If a developer builds/designs a screen with usability in mind, the meaning/purpose of the user interface (UI)
+        elements displayed on the screen are usually straightforward and do not require an explanation.
+        However, in order to support users that are either blind or having limited/low vision, developers need to
+        associate the UI elements with descriptive text so that the user understands the purpose of the UI element and how to interact with it.
+        Almost all modern smartphone and tablets operating systems provide an accessibility service that is able to
+        convert text to speech and automatically announce/speak the textual content associated with the UI element when
+        the user touches the UI element.
+    </p>
+    <p>
+        This activity introduces 'contentDescription', Android's speech-based accessibility feature for UI elements.
+        Using this feature developers are able to associate descriptive text with the UI elements on the screen.
+        The associated descriptive text is read aloud by a speech-based accessibility service like TalkBalk when the
+        user touches the UI element displayed on the device screen.
+    </p>
 
-    This module demonstrates the use of a UI element’s contentDescription attribute to provide speech-based accessibility.
+    <p>
+        The activity involves associating appropriate text with 'contentDescription' property of each UI element on the
+        screen. Setting a value for the 'contentDescription' property is straightforward and can be done by either
+        selecting
+        the UI element and then entering the textual description using the property pane or by manually updating the
+        layout XML.
+    </p>
+
+    <h3>Activity</h3>
+    <p>Download the activity <a href="SpeechBasedAccessibility.pdf" target="_blank">here</a>.</p>
+
+    <p>The non-accessible version of this app is located
+        <a href="https://github.com/milk-modules/Apps/tree/master/non-accessible/DemoApp01"
+           target="_blank">here</a>.</p>
+
+    <p>The accessible version of this app is located
+        <a href="https://github.com/milk-modules/Apps/tree/master/accessible/DemoApp01"
+           target="_blank">here</a>.</p>
 
 
-    <br/>
-    <a href="SpeechBasedAccessibility.pdf" target="_blank">Activity</a>
+    <h3>More Resources</h3>
+    <sup id="fn1">1. <a href="https://support.google.com/accessibility/android/answer/6283677" target="_blank">Get
+        started on Android with TalkBack</a></sup>
+    <br>
+    <sup id="fn2">2. <a href="https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback"
+                        target="_blank">Google TalkBack app</a></sup>
+    <br>
+    <sup id="fn3">3. <a
+            href="https://developer.android.com/reference/android/view/View.html#attr_android:contentDescription"
+            target="_blank">'contentDescription' property documentation</a></sup>
 
 </div>
-
-
 </body>
 </html>
