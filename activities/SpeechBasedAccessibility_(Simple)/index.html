@@ -17,7 +17,8 @@
         If a developer builds/designs a screen with usability in mind, the meaning/purpose of the user interface (UI)
         elements displayed on the screen are usually straightforward and do not require an explanation.
         However, in order to support users that are either blind or having limited/low vision, developers need to
-        associate the UI elements with descriptive text so that the user understands the purpose of the UI element and how to interact with it.
+        associate the UI elements with descriptive text so that the user understands the purpose of the UI element and
+        how to interact with it.
         Almost all modern smartphone and tablet operating systems provide an accessibility service that is able to
         convert text to speech and automatically announce/speak the textual content associated with the UI element when
         the user touches the UI element.
@@ -30,10 +31,20 @@
     </p>
 
     <p>
-        The activity involves associating appropriate text with the 'contentDescription' property of each UI element on the
+        The activity involves associating appropriate text with the 'contentDescription' property of each UI element on
+        the
         screen. Setting a value for the 'contentDescription' property is straightforward and can be done by either
-        selecting the UI element and then entering the textual description using the property pane or by manually updating the
+        selecting the UI element and then entering the textual description using the property pane or by manually
+        updating the
         layout XML.
+    </p>
+    <p>
+        As shown in the below image, the text on the buttons are in the form of symbols. Although the purpose of the
+        buttons can be understood by a user with normal vision, a blind or low/limited vision user will not be able to
+        comprehend the meanings of the button text. By adding a descriptive text using the 'contentDescription' property
+        of each button, the button can still retain the symbols as text, but still support the needs of vision impaired
+        users.<br>
+        <img src="screenshot01.jpg" alt="button with symbols as text" style="height: 60%"/>
     </p>
 
     <h3>Activity</h3>
