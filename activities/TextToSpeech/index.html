@@ -1,49 +1,153 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MILK Activity">
+    <meta name="author" content="Rochester Institute of Technology">
+
+    <title>Activity - MILK</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+          rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
 
+<div class="brand">M I L K</div>
+<div class="address-bar">Mobile Inclusive Learning Kit</div>
 
-<div id="mainPage">
-    <h1>
-        <center>Text To Speech</center>
-    </h1>
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+            <a class="navbar-brand" href="../../index.html">MILK</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="../../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../../pages/about.html">About</a>
+                </li>
+                <li>
+                    <a href="../../pages/activities.html">Activities</a>
+                </li>
+                <li>
+                    <a href="../../pages/contribute.html">Contribute</a>
+                </li>
+                <li>
+                    <a href="../../pages/funding.html">Funding</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
-    <h3>Introduction</h3>
-    <p>
-        The activity, <i><a href="../SpeechBasedAccessibility_(Simple)/index.html" target="_blank">Speech-based
-        accessibility</a></i>, introduced the concept of providing automatic voice based descriptions of user interface
-        (UI) elements when touched by a user. Whilst this feature provides blind and limited vision users with a description
-        of the UI, it does not provide feedback on the users interaction with the UI elements.
-    </p>
-    <p>
-        This activity incorporates speech to text functionality to provide the user with speech based feedback when the
-        user interacts with the UI elements. The activity involves providing the user with the current date and time when the user
-        clicks a button (refer below image) . In this activity, the developer will create an event handler for a button, and, within this event handler, call Android's
-        SpeechToText API to announce/speak the date and time.<br>
-        <img src="screenshot01.jpg" alt="Clicking a button, displays text below. The generation of the text will not be apparent to a blind user and hence, would need to be announced/spoken." style="height: 60%"/>
-    </p>
+<div class="container">
 
-    <h3>Activity</h3>
-    <p>Download the activity <a href="TextToSpeech.pdf" target="_blank">here</a>.</p>
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">Text To Speech</h2>
+                <hr>
+                <p><strong>Introduction</strong></p>
+                <p>
+                    The activity, <i><a href="../SpeechBasedAccessibility_(Simple)/index.html" target="_blank">Speech-based
+                    accessibility</a></i>, introduced the concept of providing automatic voice based descriptions of
+                    user interface
+                    (UI) elements when touched by a user. Whilst this feature provides blind and limited vision users
+                    with a description
+                    of the UI, it does not provide feedback on the users interaction with the UI elements.
+                </p>
+                <p>
+                    This activity incorporates speech to text functionality to provide the user with speech based
+                    feedback when the
+                    user interacts with the UI elements. The activity involves providing the user with the current date
+                    and time when the user
+                    clicks a button (refer below image) . In this activity, the developer will create an event handler
+                    for a button, and, within this event handler, call Android's
+                    SpeechToText API to announce/speak the date and time.
+                </p>
+                <p>
+                    <img src="screenshot01.jpg"
+                         alt="Clicking a button, displays text below. The generation of the text will not be apparent to a blind user and hence, would need to be announced/spoken."
+                         style="width: 100%"/>
+                </p>
 
-    <p>The non-accessible version of this app is located
-        <a href="https://github.com/milk-modules/Apps/tree/master/non-accessible/DemoApp05"
-           target="_blank">here</a>.</p>
+                <p><strong>Activity</strong></p>
+                <p>Download the activity <a href="TextToSpeech.pdf" target="_blank">here</a>.</p>
 
-    <p>The accessible version of this app is located
-        <a href="https://github.com/milk-modules/Apps/tree/master/accessible/DemoApp05"
-           target="_blank">here</a>.</p>
+                <p>The non-accessible version of this app is located
+                    <a href="https://github.com/milk-modules/Apps/tree/master/non-accessible/DemoApp05"
+                       target="_blank">here</a>.</p>
 
+                <p>The accessible version of this app is located
+                    <a href="https://github.com/milk-modules/Apps/tree/master/accessible/DemoApp05"
+                       target="_blank">here</a>.</p>
 
-    <h3>More Resources</h3>
-    <sup id="fn1">1. <a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html"
-                        target="_blank">TextToSpeech API</a></sup>
+                <p><strong>More Resources</strong></p>
+                <ul>
+                    <li><a href="https://developer.android.com/reference/android/speech/tts/TextToSpeech.html"
+                           target="_blank">TextToSpeech API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </div>
+<!-- /.container -->
 
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Copyright &copy; MILK: Mobile Inclusive Learning Kit 2017</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="../../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../../js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
