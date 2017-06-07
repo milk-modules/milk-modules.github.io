@@ -1,239 +1,134 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="https://www.facebook.com/2008/fbml">
+<html lang="en">
 
 <head>
-<title>Milk: Mobile Inclusive Learning Kit</title>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mobile Inclusive Learning Kit">
+    <meta name="author" content="Rochester Institute of Technology">
 
-    <!-- start favicon info -->
+    <title>MILK</title>
 
-<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-<link rel="icon" type="image/png" sizes="192x192"  href="images/favicon/android-icon-192x192.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-<link rel="manifest" href="images/favicon/manifest.json">
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+          rel="stylesheet" type="text/css">
 
-
-    <!-- end favicon info -->
-
-
-<!-- This must be located at the top of the page for the automatic loading of items to work -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-
-    <link rel="stylesheet" href="sitefiles/bootstrap.css">
-    <link rel="stylesheet" href="sitefiles/font-awesome.css">
-    <link rel="stylesheet" href="sitefiles/bootsnipp.css">
-
-    <!-- make sure that this is needed -->
-    <link rel="stylesheet" href="offcanvas.css">
-
-
-
-
-
- <!-- Put at bottom of page? to help load time?-->
-
-<script>
-
-
-function getURL(sParam){
-var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('&');
-    for (var i = 0; i < sURLVariables.length; i++) 
-    {
-        var sParameterName = sURLVariables[i].split('=');
-        if (sParameterName[0] == sParam) 
-        {
-            return sParameterName[1];
-        }
-    }
-}
-
-
-function loadPageData(strPageName) {
-  switch(strPageName) {
-
-    case "aboutproject":
-      $(document).ready(function() {
-        $('#content').load("pages/aboutproject.html"); 
-      });
-      $(window).on('load', function() {
-        $('#aboutProjectNavLink').addClass('dkActive');
-      })
-  break;
-
-    case "activities":
-      $(document).ready(function(){
-        $('#content').load("pages/activities.html"); 
-      });
-      $(window).on('load', function(){
-        $('#activitiesNavLink').addClass('dkActive');
-      })
-  break;
-
-    case "sactutorial":
-      $(document).ready(function(){
-        $('#content').load("pages/SacTutorial.html"); 
-      });
-      $(window).on('load', function(){
-     //   $('#activitiesNavLink').addClass('dkActive');
-      })
-  break;
-
-    case "contribute":
-      $(document).ready(function() {
-        $('#content').load("pages/contribute.html"); 
-      });
-      $(window).on('load', function() {
-        $('#contributeNavLink').addClass('dkActive');
-      })
-  break;
-
-
-    case "documentation":
-      $(document).ready(function() {
-        $('#content').load("pages/documentation.html"); 
-      });
-      $(window).on('load', function() {
-        $('#documentationNavLink').addClass('dkActive');
-      })
-  break;
-
-
-    case "funding":
-      $(document).ready(function() {
-        $('#content').load("pages/funding.html"); 
-      });
-      $(window).on('load', function() {
-        $('#fundingNavLink').addClass('dkActive');
-      })
-  break;
-  
-    case "intentprotection":
-      $(document).ready(function() {
-        $('#content').load("pages/intentprotection.html");
-      });
-      $(window).on('load', function() {
-        //$('#intentNavLink').addClass('dkActive');
-      })
-  break;
-  
-    default:
-      $(document).ready(function() {
-        $('#content').load("pages/main.html"); 
-      });
-      $(window).on('load', function() {
-        $('#homeNavLink').addClass('dkActive');
-      })
-  }
-}
-
-
-</script>
-
-    <!-- End Load the specific page info -->
-
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
-  <body>
-    <script>loadPageData(getURL("page"));</script>
 
+<body>
 
-    <nav class="navbar navbar-fixed-top navbar-bootsnipp animate" role="navigation" style="z-index: 9999999">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button aria-expanded="false" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <div class="animbrand">
+<div class="brand">M I L K</div>
+<div class="address-bar">Mobile Inclusive Learning Kit</div>
 
-        <a class="navbar-brand animate" href="index.html">Milk: Mobile Inclusive Learning Kit</a>
-      </div>
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+            <a class="navbar-brand" href="index.html">MILK</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="pages/about.html">About</a>
+                </li>
+                <li>
+                    <a href="pages/activities.html">Activities</a>
+                </li>
+                <li>
+                    <a href="pages/contribute.html">Contribute</a>
+                </li>
+                <li>
+                    <a href="pages/funding.html">Funding</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div style="height: 1px;" aria-expanded="false" class="navbar-collapse collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav navbar-right">
-  
-       <li><a href="index.html?page=activities" id="activitiesNavLink" class="animate">Activities</a></li>
-
-       <li><a href="index.html?page=funding" id="fundingNavLink" class="animate">Funding</a></li>
-
-       <li><a href="index.html?page=contribute" id="contributeNavLink" class="animate">Contribute</a></li>
-<!--
-       <li><a href="index.html?page=documentation" id="documentationNavLink" class="animate">Documentation</a></li>
-       -->
-       <li><a href="index.html?page=aboutproject" id="aboutProjectNavLink" class="animate">About Project</a></li>
-
-
-      
-      </ul>
-    </div>
-  </div>
-
+    <!-- /.container -->
 </nav>
-      <div class="container">
-  <div class="row">
-  <!-- Removed this. Too centered:  <div class="col-sm-12 text-center" id="content"> -->
-    
-    <!-- start main page body -->
 
-<div id="content" class="mainContent"></div>
+<div class="container">
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">Software is created for
+                    <strong>everyone</strong>
+                </h2>
+                <hr>
+                <p>"MILK" modules are classroom ready educational components which teach students and developers how to
+                    create accessible mobile applications, along with demonstrating the importance of creating these
+                    apps.</p>
+                <p>Each modules contains:</p>
+                <ol>
+                    <li>Appropriate background about a specific accessibility issue</li>
+                    <li>Steps to emulate that issue using a provided app</li>
+                    <li>Information about how to make the app accessible to the target group</li>
+                    <li>Steps to demonstrate that the accessibility issue has been repaired</li>
+                </ol>
+                <p>
+                    These activities can be used at a wide range of venues including:
+                </p>
+                <ul>
+                    <li>Coding Camps</li>
+                    <li>Classrooms</li>
+                    <li>STEM Outreach Activities</li>
+                    <li>Workshops</li>
 
-
-    <!-- end main page body -->
-
-
-
-    
-  </div>
+                </ul>
+            </div>
+        </div>
+    </div>
 </div>
-    <footer class="bs-footer" role="contentinfo" style="padding-left: 15px;">
- 
-&#169; 2017 Milk: Mobile Inclusive Learning Kit
+<!-- /.container -->
 
-
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Copyright &copy; MILK: Mobile Inclusive Learning Kit 2017</p>
+            </div>
+        </div>
+    </div>
 </footer>
 
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
 
- <!-- Start of Google Tracking Info -->
-
-
-<!-- AndroidVulnerabilities -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-80247498-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
 
-    <!-- End of Google Tracking Info -->
- 
-    <script src="sitefiles/bootstrap.js"></script> <!-- Needed to support collapsing of the pages -->
-     
+</body>
 
-<iframe style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" allowfullscreen="true" allowtransparency="true" scrolling="no" id="rufous-sandbox" frameborder="0"></iframe></body></html>
+</html>
