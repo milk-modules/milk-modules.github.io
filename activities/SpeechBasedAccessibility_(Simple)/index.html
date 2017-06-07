@@ -1,75 +1,185 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MILK Activity">
+    <meta name="author" content="Rochester Institute of Technology">
+
+    <title>Activity - MILK</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../../css/business-casual.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic"
+          rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
+
 <body>
 
+<div class="brand">M I L K</div>
+<div class="address-bar">Mobile Inclusive Learning Kit</div>
 
-<div id="mainPage">
-    <h1>
-        <center>Speech Based Accessibility - Simple</center>
-    </h1>
+<!-- Navigation -->
+<nav class="navbar navbar-default" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
+            <a class="navbar-brand" href="../../index.html">MILK</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="../../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../../pages/about.html">About</a>
+                </li>
+                <li>
+                    <a href="../../pages/activities.html">Activities</a>
+                </li>
+                <li>
+                    <a href="../../pages/contribute.html">Contribute</a>
+                </li>
+                <li>
+                    <a href="../../pages/funding.html">Funding</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
 
-    <h3>Introduction</h3>
-    <p>
-        If a developer builds/designs a screen with usability in mind, the meaning/purpose of the user interface (UI)
-        elements displayed on the screen are usually straightforward and do not require an explanation.
-        However, in order to support users that are either blind or having limited/low vision, developers need to
-        associate the UI elements with descriptive text so that the user understands the purpose of the UI element and
-        how to interact with it.
-        Almost all modern smartphone and tablet operating systems provide an accessibility service that is able to
-        convert text to speech and automatically announce/speak the textual content associated with the UI element when
-        the user touches the UI element.
-    </p>
-    <p>
-        This activity introduces 'contentDescription', Android's speech-based accessibility feature for UI elements.
-        Using this feature, developers are able to associate descriptive text with the UI elements on the screen.
-        The associated descriptive text is read aloud by a speech-based accessibility service, like TalkBalk, when the
-        user touches the UI element displayed on the device screen.
-    </p>
+<div class="container">
 
-    <p>
-        The activity involves associating appropriate text with the 'contentDescription' property of each UI element on
-        the
-        screen. Setting a value for the 'contentDescription' property is straightforward and can be done by either
-        selecting the UI element and then entering the textual description using the property pane or by manually
-        updating the
-        layout XML.
-    </p>
-    <p>
-        As shown in the below image, the text on the buttons are in the form of symbols. Although the purpose of the
-        buttons can be understood by a user with normal vision, a blind or low/limited vision user will not be able to
-        comprehend the meanings of the button text. By adding a descriptive text using the 'contentDescription' property
-        of each button, the button can still retain the symbols as text, but still support the needs of vision impaired
-        users.<br>
-        <img src="screenshot01.jpg" alt="button with symbols as text" style="height: 60%"/>
-    </p>
+    <div class="row">
+        <div class="box">
+            <div class="col-lg-12">
+                <hr>
+                <h2 class="intro-text text-center">Speech Based Accessibility (Simple)</h2>
+                <hr>
+                <p><strong>Introduction</strong></p>
+                <p>
+                    If a developer builds/designs a screen with usability in mind, the meaning/purpose of the user
+                    interface (UI)
+                    elements displayed on the screen are usually straightforward and do not require an explanation.
+                    However, in order to support users that are either blind or having limited/low vision, developers
+                    need to
+                    associate the UI elements with descriptive text so that the user understands the purpose of the UI
+                    element and
+                    how to interact with it.
+                    Almost all modern smartphone and tablet operating systems provide an accessibility service that is
+                    able to
+                    convert text to speech and automatically announce/speak the textual content associated with the UI
+                    element when
+                    the user touches the UI element.
+                </p>
+                <p>
+                    This activity introduces 'contentDescription', Android's speech-based accessibility feature for UI
+                    elements.
+                    Using this feature, developers are able to associate descriptive text with the UI elements on the
+                    screen.
+                    The associated descriptive text is read aloud by a speech-based accessibility service, like
+                    TalkBalk, when the
+                    user touches the UI element displayed on the device screen.
+                </p>
+                <p>
+                    The activity involves associating appropriate text with the 'contentDescription' property of each UI
+                    element on
+                    the
+                    screen. Setting a value for the 'contentDescription' property is straightforward and can be done by
+                    either
+                    selecting the UI element and then entering the textual description using the property pane or by
+                    manually
+                    updating the
+                    layout XML.
+                </p>
+                <p>
+                    As shown in the below image, the text on the buttons are in the form of symbols. Although the
+                    purpose of the
+                    buttons can be understood by a user with normal vision, a blind or low/limited vision user will not
+                    be able to
+                    comprehend the meanings of the button text. By adding a descriptive text using the
+                    'contentDescription' property
+                    of each button, the button can still retain the symbols as text, but still support the needs of
+                    vision impaired
+                    users.
+                </p>
+                <p>
+                    <img src="screenshot01.jpg" alt="button with symbols as text" style="width: 100%;"/>
+                </p>
 
-    <h3>Activity</h3>
-    <p>Download the activity <a href="SpeechBasedAccessibility_(Simple).pdf" target="_blank">here</a>.</p>
+                <p><strong>Activity</strong></p>
+                <p>Download the activity <a href="SpeechBasedAccessibility_(Simple).pdf" target="_blank">here</a>.</p>
 
-    <p>The non-accessible version of this app is located
-        <a href="https://github.com/milk-modules/Apps/tree/master/non-accessible/DemoApp01"
-           target="_blank">here</a>.</p>
+                <p>The non-accessible version of this app is located
+                    <a href="https://github.com/milk-modules/Apps/tree/master/non-accessible/DemoApp01"
+                       target="_blank">here</a>.</p>
 
-    <p>The accessible version of this app is located
-        <a href="https://github.com/milk-modules/Apps/tree/master/accessible/DemoApp01"
-           target="_blank">here</a>.</p>
+                <p>The accessible version of this app is located
+                    <a href="https://github.com/milk-modules/Apps/tree/master/accessible/DemoApp01"
+                       target="_blank">here</a>.</p>
 
-
-    <h3>More Resources</h3>
-    <sup id="fn1">1. <a href="https://support.google.com/accessibility/android/answer/6283677" target="_blank">Get
-        started on Android with TalkBack</a></sup>
-    <br>
-    <sup id="fn2">2. <a href="https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback"
-                        target="_blank">Google TalkBack app</a></sup>
-    <br>
-    <sup id="fn3">3. <a
-            href="https://developer.android.com/reference/android/view/View.html#attr_android:contentDescription"
-            target="_blank">'contentDescription' property documentation</a></sup>
+                <p><strong>More Resources</strong></p>
+                <ul>
+                    <li><a href="https://support.google.com/accessibility/android/answer/6283677" target="_blank">Get
+                        started on Android with TalkBack</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback"
+                           target="_blank">Google TalkBack app</a></li>
+                    <li>
+                        <a href="https://developer.android.com/reference/android/view/View.html#attr_android:contentDescription"
+                           target="_blank">'contentDescription' property documentation</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </div>
+<!-- /.container -->
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <p>Copyright &copy; MILK: Mobile Inclusive Learning Kit 2017</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="../../js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../../js/bootstrap.min.js"></script>
+
 </body>
+
 </html>
