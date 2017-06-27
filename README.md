@@ -10,23 +10,29 @@ You can also view the code on GitHub here: https://github.com/milkmodules/Apps/t
 <img style="margin:10px;" src="https://github.com/milk-modules/milk-modules.github.io/blob/master/images/readme/image1.png" alt="Image">
 
 4. Import project in to Android studio
+
 a. Open Android studio.
+
 b. Import project in Android studio
 
 <img style="margin:10px;" src="https://github.com/milk-modules/milk-modules.github.io/blob/master/images/readme/image2.png" alt="Image">
 
 c. Open the directory you unzipped the activity into.
+
 5. Run the project using the emulator.
 
 <img style="margin:10px;" src="https://github.com/milk-modules/milk-modules.github.io/blob/master/images/readme/image3.png" alt="Image">
 
 a. Once the emulator starts up, select the “balloon game” app on the Apps screen.
+
 6. You will be able to see an app that is non-accessible to color-blind users.
 
 <img style="margin:10px;" src="https://github.com/milk-modules/milk-modules.github.io/blob/master/images/readme/image4.png" alt="Image">
 
 7. To fix this follow the following steps:
+
 a. Open Circle.java file
+
 b. On line 36, paste the following code
 
 ```java
