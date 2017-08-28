@@ -18,7 +18,7 @@ This activity will utilize a pre-created version of this project and only applie
 
 The project contains only one screen (activity). The primary user interface (UI) elements of this screen are:
 
-1.	A form containing text boxes, buttons and a list.
+{0}.	A form containing text boxes, buttons and a list.
   [Note: there is no functionality associated with the button clicks]
 
 
