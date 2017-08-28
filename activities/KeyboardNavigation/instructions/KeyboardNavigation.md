@@ -4,7 +4,7 @@
 
 This module demonstrates the use of an external keyboard or D-Pad to navigate around an app.
 
-A working version of this app is available at: <https://github.com/milk-modules/Apps/tree/master/accessible/DemoApp04
+A working version of this app is available at: https://github.com/milk-modules/Apps/tree/master/accessible/DemoApp04
 
 ### Prerequisite
 
