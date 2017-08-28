@@ -106,8 +106,7 @@ The following steps provide end-to-end instructions on building a simple app tha
 
    #### Part 3 - Code Updates
 
-   1.     
-     Replace the content of *MainActivity.java* with the following:
+   1. Replace the content of *MainActivity.java* with the following:
 
    ![](images/04.png)
 
