@@ -26,7 +26,7 @@ The existing project contains the code to play the video and mute/unmute the vol
 
 Follow the below steps to associate the captions file to the video so that when the accessibility mode is enabled the captions will be shown
 
-1. 1.	Insert the following code at line #45 in '*MainActivity.java*':
+1. Insert the following code at line #45 in '*MainActivity.java*':
 
    ```java
    //captions file
