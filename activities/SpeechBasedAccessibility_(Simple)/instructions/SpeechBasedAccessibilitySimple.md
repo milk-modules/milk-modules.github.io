@@ -168,6 +168,7 @@ Following is the rendering of controls on the screen:
    Select the Button with id “buttonRight”. Set contentDescription to “Next”
    ![](images/07.png)
 
+
    4. *Code -  Open MainActivity.java and add the following code:*
 
          1. Declare the following variables:
