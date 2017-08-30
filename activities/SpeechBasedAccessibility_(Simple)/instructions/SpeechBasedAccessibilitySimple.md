@@ -162,11 +162,11 @@ Following is the rendering of controls on the screen:
    The “contentDescription” property of a control is utilized for accessibility purposes. The text associated with this property defines the content of this control and is used by Android’sTalkBack feature.
 
    Select the Button with id “buttonLeft”. Set contentDescription to “Back”
-   ![](images/06.png)
+   ![](images/07.png)
 
 
    Select the Button with id “buttonRight”. Set contentDescription to “Next”
-   ![](images/07.png)
+   ![](images/08.png)
 
 
    4. *Code -  Open MainActivity.java and add the following code:*
