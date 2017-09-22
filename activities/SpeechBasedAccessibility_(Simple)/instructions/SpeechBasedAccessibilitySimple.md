@@ -13,7 +13,7 @@ A working version of this app is available at: https://github.com/milk-modules/A
 2. A working Android emulator is available for testing
 3. TalkBack is enabled on the emulator (instructions: https://milk-modules.github.io/activities/general/Android_TalkBack_Install.pdf)
 
-### Steps
+### Approaches
 There two approaches that you can take to perform this activity:
 
 1. End-to-End development of the app by following all the below steps
@@ -21,7 +21,7 @@ There two approaches that you can take to perform this activity:
    1. Download the code for DemoApp03 from: <https://github.com/milk-modules/Apps/tree/master/non-accessible>
    2. Perform ONLY step #3
 
-
+### Steps
 1. *Project Creation* - Follow the screens below to create a new project
 
 ![](images/01.png)
@@ -42,118 +42,118 @@ Update the following properties of the existing Relative Layout:
 
   Within the existing Relative Layout add:
 
-1. **Switch**
+   1. **Switch**
 
-   Update the following properties:
+      Update the following properties:
 
-   - text="AlternateRendering"
-   - layout_width="match_parent"
-   - layout_height="wrap_content"
-   - id="@+id/switchAccessibility"
-   - focusable="false"
+      - text="AlternateRendering"
+      - layout_width="match_parent"
+      - layout_height="wrap_content"
+      - id="@+id/switchAccessibility"
+      - focusable="false"
 
-2. **RelativeLayout**
+   2. **RelativeLayout**
 
-   Update the following properties:
+      Update the following properties:
 
-   - layout_width="match_parent"
+      - layout_width="match_parent"
 
-   - layout_height="wrap_content"
+      - layout_height="wrap_content"
 
-   - id="@+id/layoutContents"
+      - id="@+id/layoutContents"
 
-   - layout_weight="100"
+      - layout_weight="100"
 
-   - Within this Relative Layout add the following controls:
+      - Within this Relative Layout add the following controls:
 
-     1. **Button**
+        1. **Button**
 
-        Update the following properties:
+           Update the following properties:
 
-        - android:text="&#60;&#60;--"
-        - layout_width="wrap_content"
-        - layout_height="wrap_content"
-        - layout_alignParentTop="true"
-        - layout_alignParentLeft="true"
-        - layout_alignParentStart="true"
-        - layout_marginTop="146dp"
-        - id="@+id/buttonLeft"
-        - background="@android:drawable/btn_default"
-        - gravity="center"
-        - layout_gravity="left|center"
-        - layout_marginLeft="50dp"
+           - android:text="&#60;&#60;--"
+           - layout_width="wrap_content"
+           - layout_height="wrap_content"
+           - layout_alignParentTop="true"
+           - layout_alignParentLeft="true"
+           - layout_alignParentStart="true"
+           - layout_marginTop="146dp"
+           - id="@+id/buttonLeft"
+           - background="@android:drawable/btn_default"
+           - gravity="center"
+           - layout_gravity="left|center"
+           - layout_marginLeft="50dp"
 
-     2. **TextView**
+        2. **TextView**
 
-        Update the following properties:
+           Update the following properties:
 
-        - text="Tap the Back or Next button to proceed"
-        - layout_width="match_parent"
-        - layout_height="wrap_content"
-        - id="@+id/textView"
-        - textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-        - layout_above="@+id/buttonRight"
-        - layout_marginBottom="36dp"
-        - textStyle="normal|bold"
-        - textAlignment="center"
-        - layout_alignParentLeft="false"
-        - layout_alignParentStart="false"
-        - layout_alignParentRight="false"
-        - layout_alignParentEnd="false"
+           - text="Tap the Back or Next button to proceed"
+           - layout_width="match_parent"
+           - layout_height="wrap_content"
+           - id="@+id/textView"
+           - textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+           - layout_above="@+id/buttonRight"
+           - layout_marginBottom="36dp"
+           - textStyle="normal|bold"
+           - textAlignment="center"
+           - layout_alignParentLeft="false"
+           - layout_alignParentStart="false"
+           - layout_alignParentRight="false"
+           - layout_alignParentEnd="false"
 
-     3. **Button**
+        3. **Button**
 
-        Update the following properties:
+           Update the following properties:
 
-        - android:text="&#62;&#62;--"
-        - layout_width="wrap_content"
-        - layout_height="wrap_content"
-        - id="@+id/buttonRight"
-        - layout_gravity="right"
-        - background="@android:drawable/btn_default"
-        - gravity="center"
-        - layout_alignTop="@+id/buttonLeft"
-        - layout_alignParentRight="true"
-        - layout_alignParentEnd="true"
-        - layout_marginRight="50dp"
+           - android:text="&#62;&#62;--"
+           - layout_width="wrap_content"
+           - layout_height="wrap_content"
+           - id="@+id/buttonRight"
+           - layout_gravity="right"
+           - background="@android:drawable/btn_default"
+           - gravity="center"
+           - layout_alignTop="@+id/buttonLeft"
+           - layout_alignParentRight="true"
+           - layout_alignParentEnd="true"
+           - layout_marginRight="50dp"
 
-3. **RelativeLayout**
+   3. **RelativeLayout**
 
-   Update the following properties:
+      Update the following properties:
 
-   - layout_width="match_parent"
-   - layout_height="wrap_content"
-   - layout_weight="1"
-   - Within this Relative Layout add the following controls:
+      - layout_width="match_parent"
+      - layout_height="wrap_content"
+      - layout_weight="1"
+      - Within this Relative Layout add the following controls:
 
-     1. **TextView**
+        1. **TextView**
 
-        Update the following properties:
+           Update the following properties:
 
-        - layout_width="match_parent"
-        - layout_height="wrap_content"
-        - id="@+id/textViewStatus"
-        - layout_alignParentTop="true"
-        - layout_alignParentLeft="true"
-        - layout_alignParentStart="true"
-        - textAlignment="center"
-        - textStyle="normal|bold"
-        - layout_alignParentRight="true"
-        - layout_alignParentEnd="true"
-        - text="Status:"
-        - gravity="bottom"
-
-
-
-Following is the hierarchical layout of the controls on the screen:
-
-![](images/05.png)
+           - layout_width="match_parent"
+           - layout_height="wrap_content"
+           - id="@+id/textViewStatus"
+           - layout_alignParentTop="true"
+           - layout_alignParentLeft="true"
+           - layout_alignParentStart="true"
+           - textAlignment="center"
+           - textStyle="normal|bold"
+           - layout_alignParentRight="true"
+           - layout_alignParentEnd="true"
+           - text="Status:"
+           - gravity="bottom"
 
 
 
-Following is the rendering of controls on the screen:
+   Following is the hierarchical layout of the controls on the screen:
 
-![](images/06.png)
+   ![](images/05.png)
+
+
+
+   Following is the rendering of controls on the screen:
+
+   ![](images/06.png)
 
 
 
@@ -171,71 +171,70 @@ Following is the rendering of controls on the screen:
    ![](images/08.png)
 
 
-   4. *Code -  Open MainActivity.java and add the following code:*
+4. *Code -  Open MainActivity.java and add the following code:*
 
-         1. Declare the following variables:
+   1. Declare the following variables:
+      ```java
+         public class MainActivity extends AppCompatActivity {
 
-            ```java
-            public class MainActivity extends AppCompatActivity {
+            Button buttonLeft, buttonRight;
+            TextView textStatus;
+            Switch switchRendering;
+            RelativeLayout layoutCover;
+      ```
 
-                Button buttonLeft, buttonRight;
-                TextView textStatus;
-                Switch switchRendering;
-                RelativeLayout layoutCover;
-            ```
+   2. Replace code inside the **onCreate** method with:
 
-         2. Replace code inside the **onCreate** method with:
+      ```java
+            @Override
+            protected void onCreate(Bundle savedInstanceState) {
+               super.onCreate(savedInstanceState);
+               setContentView(R.layout.activity_main);
 
-            ```java
-                @Override
-                protected void onCreate(Bundle savedInstanceState) {
-                    super.onCreate(savedInstanceState);
-                    setContentView(R.layout.activity_main);
+               buttonLeft = (Button)findViewById(R.id.buttonLeft);
+               buttonRight = (Button)findViewById(R.id.buttonRight);
+               textStatus = (TextView)findViewById(R.id.textViewStatus);
+               switchRendering = (Switch)findViewById(R.id.switchAccessibility);
 
-                    buttonLeft = (Button)findViewById(R.id.buttonLeft);
-                    buttonRight = (Button)findViewById(R.id.buttonRight);
-                    textStatus = (TextView)findViewById(R.id.textViewStatus);
-                    switchRendering = (Switch)findViewById(R.id.switchAccessibility);
+               layoutCover = (RelativeLayout)findViewById(R.id.layoutContents);
 
-                    layoutCover = (RelativeLayout)findViewById(R.id.layoutContents);
-
-                    switchRendering.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-                        @Override
-                        public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
-                            if (isChecked) {
-                                layoutCover.setBackgroundColor(Color.BLACK);
-                                buttonLeft.setBackgroundColor(Color.BLACK);
-                                buttonRight.setBackgroundColor(Color.BLACK);
-                            }
-                            else
-                            {
-                                layoutCover.setBackgroundColor(Color.TRANSPARENT);
-                                buttonLeft.setBackgroundResource(android.R.drawable.btn_default);
-                                buttonRight.setBackgroundResource(android.R.drawable.btn_default);
-                            }
-                        }
-                    });
+            switchRendering.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+               @Override
+               public void onCheckedChanged(CompoundButton buttonView, boolean isChecked){
+                  if (isChecked) {
+                     layoutCover.setBackgroundColor(Color.BLACK);
+                     buttonLeft.setBackgroundColor(Color.BLACK);
+                     buttonRight.setBackgroundColor(Color.BLACK);
+                  }
+                  else
+                  {
+                     layoutCover.setBackgroundColor(Color.TRANSPARENT);
+                     buttonLeft.setBackgroundResource(android.R.drawable.btn_default);
+                     buttonRight.setBackgroundResource(android.R.drawable.btn_default);
+                  }
+               }
+            });
 
 
-                    buttonLeft.setOnClickListener(
-                            new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    textStatus.setText("Button Tapped: Back (Left)");
-                                }
-                            }
-                    );
+            buttonLeft.setOnClickListener(
+               new View.OnClickListener() {
+                  @Override
+                  public void onClick(View v) {
+                     textStatus.setText("Button Tapped: Back (Left)");
+                  }
+               }
+            );
 
-                    buttonRight.setOnClickListener(
-                            new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    textStatus.setText("Button Tapped: Next (Right)");
-                                }
-                            }
-                    );
-                }
-            ```
+            buttonRight.setOnClickListener(
+               new View.OnClickListener() {
+                  @Override
+                  public void onClick(View v) {
+                     textStatus.setText("Button Tapped: Next (Right)");
+                  }
+               }
+            );
+         }
+      ```
 
 
 
