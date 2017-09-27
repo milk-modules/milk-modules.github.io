@@ -40,13 +40,13 @@
 
 5. To fix this follow the following steps:
    Open Circle.java file
-   On line 36, paste the following code
+   On line 32, paste the following code
 
 
 ```java
 if(isPoppable) {
     Paint paint = new Paint();
-    paint.setColor(textColor);
+    paint.setColor(Color.rgb(0,0,0));
     paint.setTextSize(64f);
     paint.setAntiAlias(true);
     paint.setTextAlign(Paint.Align.CENTER);
