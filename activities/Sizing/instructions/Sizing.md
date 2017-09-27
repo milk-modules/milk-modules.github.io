@@ -12,7 +12,7 @@ A working version of this app is available at: https://github.com/milk-modules/A
 1. Android Studio is installed on the development workstation
 2. A working Android emulator is available for testing
 
-### Steps
+### Approaches
 
 There two approaches that you can take to perform this activity:
 
@@ -21,7 +21,7 @@ There two approaches that you can take to perform this activity:
    1. Download the code for DemoApp03 from: <https://github.com/milk-modules/Apps/tree/master/non-accessible>
    2. Perform ONLY step #3
 
-
+### Steps
 
 1. *Project Creation* - Follow the screens below to create a new project
 
@@ -33,128 +33,128 @@ There two approaches that you can take to perform this activity:
 
 ![](images/04.png)
 
-2. *User Interface Construction*
+2. *User Interface Construction (working in activity_main.xml)*
 
-Update the following properties of the existing Relative Layout:
-
-- layout_width="match_parent"
-- layout_height="match_parent"
-
-  Within the existing Relative Layout add:
-
-1. **Switch**
-
-   Update the following properties:
-
-   - text="AlternateRendering"
-   - layout_width="match_parent"
-   - layout_height="wrap_content"
-   - id="@+id/switchAccessibility"
-   - focusable="false"
-
-2. **RelativeLayout**
-
-   Update the following properties:
+   Update the following properties of the existing Relative Layout:
 
    - layout_width="match_parent"
+   - layout_height="match_parent"
 
-   - layout_height="wrap_content"
+     Within the existing Relative Layout add:
 
-   - id="@+id/layoutContents"
+   1. **Switch**
 
-   - layout_weight="100"
+      Update the following properties:
 
-   - Within this Relative Layout add the following controls:
+      - text="AlternateRendering"
+      - layout_width="match_parent"
+      - layout_height="wrap_content"
+      - id="@+id/switchAccessibility"
+      - focusable="false"
 
-     1. **Button**
+   2. **RelativeLayout**
 
-        Update the following properties:
+      Update the following properties:
 
-        - android:text="Yes"
-        - android:layout_width="50dp"
-        - android:layout_height="35dp"
-        - android:layout_alignParentTop="true"
-        - android:layout_alignParentLeft="true"
-        - android:layout_alignParentStart="true"
-        - android:layout_marginTop="146dp"
-        - android:id="@+id/buttonLeft"
-        - android:background="@android:drawable/btn_default"
-        - android:gravity="center"
-        - android:layout_gravity="left|center"
-        - android:layout_marginLeft="130dp" 
+      - layout_width="match_parent"
 
-     2. **TextView**
+      - layout_height="wrap_content"
 
-        Update the following properties:
+      - id="@+id/layoutContents"
 
-        - android:text="Is this the greatest app of all time?"
-        - android:layout_width="match_parent"
-        - android:layout_height="wrap_content"
-        - android:id="@+id/textView"
-        - android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-        - android:layout_above="@+id/buttonRight"
-        - android:layout_marginBottom="36dp"
-        - android:textStyle="normal|bold"
-        - android:textAlignment="center"
-        - android:layout_alignParentLeft="false"
-        - android:layout_alignParentStart="false"
-        - android:layout_alignParentRight="false"
-        - android:layout_alignParentEnd="false"
-        - android:gravity="center_horizontal""
+      - layout_weight="100"
 
-     3. **Button**
+      - Within this Relative Layout add the following controls:
 
-        Update the following properties:
+        1. **Button**
 
-        - android:text="No"
-        - android:layout_width="45dp"
-        - android:layout_height="35dp"
-        - android:id="@+id/buttonRight"
-        - android:layout_gravity="right"
-        - android:background="@android:drawable/btn_default"
-        - android:gravity="center"
-        - android:layout_alignTop="@+id/buttonLeft"
-        - android:layout_alignParentRight="true"
-        - android:layout_alignParentEnd="true"
-        - android:layout_marginRight="130dp"
+           Update the following properties:
 
-3. **RelativeLayout**
+           - android:text="Yes"
+           - android:layout_width="50dp"
+           - android:layout_height="35dp"
+           - android:layout_alignParentTop="true"
+           - android:layout_alignParentLeft="true"
+           - android:layout_alignParentStart="true"
+           - android:layout_marginTop="146dp"
+           - android:id="@+id/buttonLeft"
+           - android:background="@android:drawable/btn_default"
+           - android:gravity="center"
+           - android:layout_gravity="left|center"
+           - android:layout_marginLeft="130dp" 
 
-   Update the following properties:
+        2. **TextView**
 
-   - layout_width="match_parent"
-   - layout_height="wrap_content"
-   - layout_weight="1"
-   - Within this Relative Layout add the following controls:
+           Update the following properties:
 
-     1. **TextView**
+           - android:text="Is this the greatest app of all time?"
+           - android:layout_width="match_parent"
+           - android:layout_height="wrap_content"
+           - android:id="@+id/textView"
+           - android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+           - android:layout_above="@+id/buttonRight"
+           - android:layout_marginBottom="36dp"
+           - android:textStyle="normal|bold"
+           - android:textAlignment="center"
+           - android:layout_alignParentLeft="false"
+           - android:layout_alignParentStart="false"
+           - android:layout_alignParentRight="false"
+           - android:layout_alignParentEnd="false"
+           - android:gravity="center_horizontal""
 
-        Update the following properties:
+        3. **Button**
 
-        - layout_width="match_parent"
-        - layout_height="wrap_content"
-        - id="@+id/textViewStatus"
-        - layout_alignParentTop="true"
-        - layout_alignParentLeft="true"
-        - layout_alignParentStart="true"
-        - textAlignment="center"
-        - textStyle="normal|bold"
-        - layout_alignParentRight="true"
-        - layout_alignParentEnd="true"
-        - text="Status:"
-        - gravity="bottom"
+           Update the following properties:
+
+           - android:text="No"
+           - android:layout_width="45dp"
+           - android:layout_height="35dp"
+           - android:id="@+id/buttonRight"
+           - android:layout_gravity="right"
+           - android:background="@android:drawable/btn_default"
+           - android:gravity="center"
+           - android:layout_alignTop="@+id/buttonLeft"
+           - android:layout_alignParentRight="true"
+           - android:layout_alignParentEnd="true"
+           - android:layout_marginRight="130dp"
+
+   3. **RelativeLayout**
+
+      Update the following properties:
+
+      - layout_width="match_parent"
+      - layout_height="wrap_content"
+      - layout_weight="1"
+      - Within this Relative Layout add the following controls:
+
+        1. **TextView**
+
+           Update the following properties:
+
+           - layout_width="match_parent"
+           - layout_height="wrap_content"
+           - id="@+id/textViewStatus"
+           - layout_alignParentTop="true"
+           - layout_alignParentLeft="true"
+           - layout_alignParentStart="true"
+           - textAlignment="center"
+           - textStyle="normal|bold"
+           - layout_alignParentRight="true"
+           - layout_alignParentEnd="true"
+           - text="Status:"
+           - gravity="bottom"
 
 
 
-Following is the hierarchical layout of the controls on the screen:
+   Following is the hierarchical layout of the controls on the screen:
 
-![](images/05.png)
+   ![](images/05.png)
 
 
 
-Following is the rendering of controls on the screen:
+   Following is the rendering of controls on the screen:
 
-![](images/06.png)
+   ![](images/06.png)
 
 
 
