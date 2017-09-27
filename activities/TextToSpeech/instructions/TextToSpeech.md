@@ -18,13 +18,13 @@ This activity will utilize a pre-created version of this project and only applie
 
 The project contains only one screen (activity). The primary user interface (UI) elements of this screen are:
 
-{0}.	A Switch control located at the top of the screen. Turning this control ‘on’ and ‘off’ will hide/show the UI elements on the screen. This behavior is to simulate a blind user.
-{0}.	Two Buttons. One button is to obtain the current date and the other button is to obtain the current time.
-{0}.	A TextView located towards the bottom of the screen. This control will show the date and time when the button is tapped/clicked.
+1.	A Switch control located at the top of the screen. Turning this control ‘on’ and ‘off’ will hide/show the UI elements on the screen. This behavior is to simulate a blind user.
+2.	Two Buttons. One button is to obtain the current date and the other button is to obtain the current time.
+3.	A TextView located towards the bottom of the screen. This control will show the date and time when the button is tapped/clicked.
 
 The existing project contains the code to show the date and time when the buttons are tapped/clicked.
 
-Follow the below steps to add TextToSpeech functionality so that when a button is tapped/clicked, the app will announce/speak the date and time. The file MainActivity.java should be updated with the below.
+Follow the below steps to add TextToSpeech functionality so that when a button is tapped/clicked, the app will announce/speak the date and time. The file *MainActivity.java* should be updated with the code below.
 
 
 1. Create the following variable:
@@ -63,10 +63,10 @@ Follow the below steps to add TextToSpeech functionality so that when a button i
 
    ```java
    a.	Replace: txtDisplay.setText("Today's Date: " + todayDateString);
-   With: provideMessage("Today's Date: " + todayDateString);
+         With: provideMessage("Today's Date: " + todayDateString);
 
    b.	Replace: txtDisplay.setText("Current Time: " + currentTimeString);
-   With:	provideMessage("Current Time: " + currentTimeString);
+         With:	provideMessage("Current Time: " + currentTimeString);
    ```
 
    ​
