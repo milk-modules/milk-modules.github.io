@@ -37,8 +37,8 @@ There two approaches that you can take to perform this activity:
 
    Update the following properties of the existing Relative Layout:
 
-   - layout_width="match_parent"
-   - layout_height="match_parent"
+   - android:layout_width="match_parent"
+   - android:layout_height="match_parent"
 
      Within the existing Relative Layout add:
 
@@ -46,25 +46,25 @@ There two approaches that you can take to perform this activity:
 
       Update the following properties:
 
-      - text="AlternateRendering"
-      - layout_width="match_parent"
-      - layout_height="wrap_content"
-      - id="@+id/switchAccessibility"
-      - focusable="false"
+      - android:text="AlternateRendering"
+      - android:layout_width="match_parent"
+      - android:layout_height="wrap_content"
+      - android:id="@+id/switchAccessibility"
+      - android:focusable="false"
 
    2. **RelativeLayout**
 
       Update the following properties:
 
-      - layout_width="match_parent"
+      - android:layout_width="match_parent"
 
-      - layout_height="wrap_content"
+      - android:layout_height="wrap_content"
 
-      - id="@+id/layoutContents"
+      - android:id="@+id/layoutContents"
 
-      - layout_weight="100"
+      - android:layout_weight="100"
 
-      - Within this Relative Layout add the following controls:
+      - android:Within this Relative Layout add the following controls:
 
         1. **Button**
 
@@ -122,27 +122,27 @@ There two approaches that you can take to perform this activity:
 
       Update the following properties:
 
-      - layout_width="match_parent"
-      - layout_height="wrap_content"
-      - layout_weight="1"
-      - Within this Relative Layout add the following controls:
+      - android:layout_width="match_parent"
+      - android:layout_height="wrap_content"
+      - android:layout_weight="1"
+      - android:Within this Relative Layout add the following controls:
 
         1. **TextView**
 
            Update the following properties:
 
-           - layout_width="match_parent"
-           - layout_height="wrap_content"
-           - id="@+id/textViewStatus"
-           - layout_alignParentTop="true"
-           - layout_alignParentLeft="true"
-           - layout_alignParentStart="true"
-           - textAlignment="center"
-           - textStyle="normal|bold"
-           - layout_alignParentRight="true"
-           - layout_alignParentEnd="true"
-           - text="Status:"
-           - gravity="bottom"
+           - android:layout_width="match_parent"
+           - android:layout_height="wrap_content"
+           - android:id="@+id/textViewStatus"
+           - android:layout_alignParentTop="true"
+           - android:layout_alignParentLeft="true"
+           - android:layout_alignParentStart="true"
+           - android:textAlignment="center"
+           - android:textStyle="normal|bold"
+           - android:layout_alignParentRight="true"
+           - android:layout_alignParentEnd="true"
+           - android:text="Status:"
+           - android:gravity="bottom"
 
 
 
@@ -163,16 +163,16 @@ There two approaches that you can take to perform this activity:
    The recommend size for touch targets should be at least 48 x 48 dp. There should also be a spacing of 8dp or more between the targets.
 
    Select the Button with id “*buttonLeft*”. Update the following properties:
-   - layout_width = 60dp
-   - layout_height = 55dp
-   - layout_marginLeft = 100dp
-   - textSize = 18sp
+   - android:layout_width = 60dp
+   - android:layout_height = 55dp
+   - android:layout_marginLeft = 100dp
+   - android:textSize = 18sp
 
    Select the Button with id “*buttonRight*”. Update the following properties:
-   - layout_width = 60dp
-   - layout_height = 55dp
-   - layout_marginLeft = 100dp
-   - textSize = 18sp
+   - android:layout_width = 60dp
+   - android:layout_height = 55dp
+   - android:layout_marginRight = 100dp
+   - android:textSize = 18sp
 
 ![](images/07.png)
 
