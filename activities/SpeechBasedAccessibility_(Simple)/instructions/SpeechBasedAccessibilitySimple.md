@@ -37,8 +37,8 @@ There two approaches that you can take to perform this activity:
 
 Update the following properties of the existing Relative Layout:
 
-- layout_width="match_parent"
-- layout_height="match_parent"
+- android:layout_width="match_parent"
+- android:layout_height="match_parent"
 
   Within the existing Relative Layout add:
 
@@ -46,23 +46,23 @@ Update the following properties of the existing Relative Layout:
 
       Update the following properties:
 
-      - text="AlternateRendering"
-      - layout_width="match_parent"
-      - layout_height="wrap_content"
-      - id="@+id/switchAccessibility"
-      - focusable="false"
+      - android:text="AlternateRendering"
+      - android:layout_width="match_parent"
+      - android:layout_height="wrap_content"
+      - android:id="@+id/switchAccessibility"
+      - android:focusable="false"
 
    2. **RelativeLayout**
 
       Update the following properties:
 
-      - layout_width="match_parent"
+      - android:layout_width="match_parent"
 
-      - layout_height="wrap_content"
+      - android:layout_height="wrap_content"
 
-      - id="@+id/layoutContents"
+      - android:id="@+id/layoutContents"
 
-      - layout_weight="100"
+      - android:layout_weight="100"
 
       - Within this Relative Layout add the following controls:
 
@@ -71,77 +71,77 @@ Update the following properties of the existing Relative Layout:
            Update the following properties:
 
            - android:text="&#60;&#60;--"
-           - layout_width="wrap_content"
-           - layout_height="wrap_content"
-           - layout_alignParentTop="true"
-           - layout_alignParentLeft="true"
-           - layout_alignParentStart="true"
-           - layout_marginTop="146dp"
-           - id="@+id/buttonLeft"
-           - background="@android:drawable/btn_default"
-           - gravity="center"
-           - layout_gravity="left|center"
-           - layout_marginLeft="50dp"
+           - android:layout_width="wrap_content"
+           - android:layout_height="wrap_content"
+           - android:layout_alignParentTop="true"
+           - android:layout_alignParentLeft="true"
+           - android:layout_alignParentStart="true"
+           - android:layout_marginTop="146dp"
+           - android:id="@+id/buttonLeft"
+           - android:background="@android:drawable/btn_default"
+           - android:gravity="center"
+           - android:layout_gravity="left|center"
+           - android:layout_marginLeft="50dp"
 
         2. **TextView**
 
            Update the following properties:
 
-           - text="Tap the Back or Next button to proceed"
-           - layout_width="match_parent"
-           - layout_height="wrap_content"
-           - id="@+id/textView"
-           - textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
-           - layout_above="@+id/buttonRight"
-           - layout_marginBottom="36dp"
-           - textStyle="normal|bold"
-           - textAlignment="center"
-           - layout_alignParentLeft="false"
-           - layout_alignParentStart="false"
-           - layout_alignParentRight="false"
-           - layout_alignParentEnd="false"
+           - android:text="Tap the Back or Next button to proceed"
+           - android:layout_width="match_parent"
+           - android:layout_height="wrap_content"
+           - android:id="@+id/textView"
+           - android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+           - android:layout_above="@+id/buttonRight"
+           - android:layout_marginBottom="36dp"
+           - android:textStyle="normal|bold"
+           - android:textAlignment="center"
+           - android:layout_alignParentLeft="false"
+           - android:layout_alignParentStart="false"
+           - android:layout_alignParentRight="false"
+           - android:layout_alignParentEnd="false"
 
         3. **Button**
 
            Update the following properties:
 
            - android:text="&#62;&#62;--"
-           - layout_width="wrap_content"
-           - layout_height="wrap_content"
-           - id="@+id/buttonRight"
-           - layout_gravity="right"
-           - background="@android:drawable/btn_default"
-           - gravity="center"
-           - layout_alignTop="@+id/buttonLeft"
-           - layout_alignParentRight="true"
-           - layout_alignParentEnd="true"
-           - layout_marginRight="50dp"
+           - android:layout_width="wrap_content"
+           - android:layout_height="wrap_content"
+           - android:id="@+id/buttonRight"
+           - android:layout_gravity="right"
+           - android:background="@android:drawable/btn_default"
+           - android:gravity="center"
+           - android:layout_alignTop="@+id/buttonLeft"
+           - android:layout_alignParentRight="true"
+           - android:layout_alignParentEnd="true"
+           - android:layout_marginRight="50dp"
 
    3. **RelativeLayout**
 
       Update the following properties:
 
-      - layout_width="match_parent"
-      - layout_height="wrap_content"
-      - layout_weight="1"
+      - android:layout_width="match_parent"
+      - android:layout_height="wrap_content"
+      - android:layout_weight="1"
       - Within this Relative Layout add the following controls:
 
         1. **TextView**
 
            Update the following properties:
 
-           - layout_width="match_parent"
-           - layout_height="wrap_content"
-           - id="@+id/textViewStatus"
-           - layout_alignParentTop="true"
-           - layout_alignParentLeft="true"
-           - layout_alignParentStart="true"
-           - textAlignment="center"
-           - textStyle="normal|bold"
-           - layout_alignParentRight="true"
-           - layout_alignParentEnd="true"
-           - text="Status:"
-           - gravity="bottom"
+           - android:layout_width="match_parent"
+           - android:layout_height="wrap_content"
+           - android:id="@+id/textViewStatus"
+           - android:layout_alignParentTop="true"
+           - android:layout_alignParentLeft="true"
+           - android:layout_alignParentStart="true"
+           - android:textAlignment="center"
+           - android:textStyle="normal|bold"
+           - android:layout_alignParentRight="true"
+           - android:layout_alignParentEnd="true"
+           - android:text="Status:"
+           - android:gravity="bottom"
 
 
 
