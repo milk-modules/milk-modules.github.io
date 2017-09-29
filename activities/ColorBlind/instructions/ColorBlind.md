@@ -32,9 +32,7 @@ Further reading: <http://mkweb.bcgsc.ca/colorblind/>
   ```java
   import android.view.View;
   import java.util.Random;
-  ```
-
-
+  
   class Utility {
       static int GenerateRandomInteger(int Min, int Max)
       {
@@ -114,8 +112,6 @@ Further reading: <http://mkweb.bcgsc.ca/colorblind/>
       public void setCircleEventListener (CircleEventListener listener) {
           this.listener = listener;
       }
-  ```
-
 
       public void Move(){
           circleRadius = Utility.ConvertToDP(((View) this.getParent()),20);
@@ -161,7 +157,7 @@ Further reading: <http://mkweb.bcgsc.ca/colorblind/>
           }
       }
     }
-
+```
 5.  Update ‘activity_main.xml’ - Replace the existing code with the following code
 
     ```xml
@@ -241,7 +237,7 @@ Further reading: <http://mkweb.bcgsc.ca/colorblind/>
     </RelativeLayout>
     ```
 
-    6. Update 'MainActivity' class - Replace the existing code in the class with the following code
+6.  Update 'MainActivity' class - Replace the existing code in the class with the following code
 
        ```java
        import android.app.AlertDialog;
